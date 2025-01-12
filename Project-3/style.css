@@ -1,7 +1,7 @@
 
 body{
     font-size: 16px;
-    background-color: #666;
+    /* background-color: #666; */
     width: 100vw;
     height: 100vh;
 }
@@ -17,6 +17,25 @@ body{
 
 h1{
     text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
+}
+
+.input-container{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+    align-items: baseline;
+}
+
+.input-container input{
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.input-container button{
+    padding: 5px;
+    margin-left: 10px;
+    background-color: aliceblue;
+    color: #FF0000;
 }
 
 button {
@@ -41,71 +60,3 @@ button {
     box-shadow: 0 5px #666;
     transform: translateY(4px);
    }
-   .btn{
-    background-color: #fc8d38;
-    padding: 5px 3px;
-    box-shadow: 0 5px #999;
-   }
-
-   input{
-    margin-bottom: 20px;
-    padding: 6px;
-    font-size: medium;
-    font-weight: 700;
-    font-style: italic;
-   }
-   label{
-    font-size: medium;
-    font-weight: 700;
-    font-style: italic;
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
-   }
-   .label{
-    
-    gap: 20px;
-    
-   }
-   .toastMessage{
-    position: fixed;
-    z-index: 999;
-    top: 2rem;
-    right: 2rem;
-    background-color: #fc8d38;
-    border: 1px solid white;
-    border-radius: 0.25rem;
-    padding: 1rem 2rem;
-    cursor: pointer;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-   }
-
-   .toastMessageSlideIn{
-    animation: toasAnimationIn 0.5s ease-in ;
-   }
-
-   .toastMessageSlideOut{
-    animation: toasAnimationOut 0.5s ease-in ;
-   }
-
-/* Animation for toas-Message */
-
-@keyframes toasAnimationIn {
-    from {
-        transform: translateX(200px);
-        opacity: 0;
-    }
-    to{
-        transform: translateX(0px);
-        opacity: 1;
-    }
-}
-
-@keyframes toasAnimationOut {
-    from {
-        transform: translateX(0px);
-        opacity: 1;
-    }
-    to{
-        transform: translateX(200px);
-        opacity: 0;
-    }
-}
