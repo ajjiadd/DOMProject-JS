@@ -16,7 +16,15 @@ body{
 }
 
 h1{
-    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF; 
+    text-shadow: 0 0 3px #FF0000, 0 0 5px #0000FF;
+    margin-bottom: 7px; 
+    font-size: 40px;
+}
+
+.description{
+    color: #fffdfd;
+    text-shadow: 0 0 3px #212020;
+    font-size:18px;
 }
 
 .input-container{
