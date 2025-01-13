@@ -83,6 +83,9 @@ function genarateTostmsg(msg){
     });
     document.body.appendChild(div)
 }
+
+
+// Check the Right color code 
 /** 
   @param {string} color 
  */
